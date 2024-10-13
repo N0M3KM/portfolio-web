@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import SkillCard from "../contents/SkillCard/SkillCard";
 import SkillCardInfo from "../contents/SkillCard/SkillCardInfo";
 import Title from "../contents/Title";
 import { FaTools } from "react-icons/fa";
+import { motion, useAnimation, useInView } from "framer-motion";
 
 const cardInfo = [
   {title : "Language", icon : '/images/programming.png'},
@@ -14,7 +15,14 @@ const cardInfo = [
 
 const SkillSection = () => {
   return (
-    <section id='skills' className="relative mt-7 py-5 px-10 max-w-screen w-3/4 md:w-5/6 bg-black bg-grid-white/[0.2] border-2 border-[#f65afa] ">
+    <motion.section 
+      id='skills' 
+      initial={{ opacity: 0}}
+      whileInView={{ opacity: 1}}
+      transition={{duration : 1}}
+      viewport={{ once: true }}
+      className="relative mt-7 py-5 px-10 max-w-screen w-3/4 md:w-5/6 bg-black bg-grid-white/[0.2] border-2 border-[#f65afa] "
+    >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Title title="Skill" icon={<FaTools color="white" size={35}/>}/>
       <div className="flex flex-col gap-1 z-1 relative">
@@ -29,7 +37,7 @@ const SkillSection = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

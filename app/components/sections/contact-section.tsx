@@ -9,35 +9,33 @@ import DiscordCard from "../contents/ContactCard/DiscordCard";
 import GithubCard from "../contents/ContactCard/GithubCard";
 import Title from "../contents/Title";
 
-const slideInFromTop = {
-  hidden: { opacity: 0, y: -20 },
-  visible: { opacity: 1, y: 0 },
-};
-
-const slideInFromLeft = {
-  hidden: { opacity: 0, x: -20 },
-  visible: { opacity: 1, x: 0 },
-};
-
 const ContactSection: React.FC = () => {
   return (
     <section id='contact' className="py-10 mx-auto text-white w-11/12 sm:w-3/4 md:w-5/6 max-w-screen-xl">
       <motion.h1
         className="text-4xl font-semibold mb-6 open-sans-font"
-        variants={slideInFromTop}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 20
+        }}
+        viewport={{ once: true }}
       >
         <Title title="Contact" icon={<MdContactSupport color="white" size={35}/>}/>
       </motion.h1>
 
       <motion.div 
         className="flex flex-col md:flex-row justify-between"
-        variants={slideInFromLeft}
-        initial="hidden"
-        animate="visible"
-        transition={{ duration: 0.5, delay: 0.2 }}
+        initial={{ opacity: 0, x: -20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 200,
+          damping: 15
+        }}
+        viewport={{ once: true }}
       >
         <div className="w-full md:w-1/3 md:mr-7">
           <ContactCard />

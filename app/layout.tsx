@@ -15,6 +15,7 @@ const fredoka = Fredoka({
   variable : '--fredoka-font'
 })
 
+
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "Personal Portfolio Website",

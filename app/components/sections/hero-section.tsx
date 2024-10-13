@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { BackgroundGradient } from "../utils/background-gradient";
+import Image from "next/image";
 import { Meteors } from "../utils/meteors";
 import { favorites } from "@/libs/info/favorites";
-  
+ 
 const HeroSection = () => {
   const devSpan = <span className="inline font-bold sm:text-lg lg:text-xl bg-gradient-to-r from-purple-500 to-sky-500 bg-clip-text text-transparent">developer</span>
   const nameSpan = <span className={`open-sans-font font-extrabold text-3xl sm:text-4xl lg:text-6xl px-1 inline bg-gradient-to-r from-purple-500 via-pink-400 via-blue-500 to-sky-500 bg-clip-text text-transparent`}>YUAN</span>
@@ -32,7 +32,7 @@ const HeroSection = () => {
               duration: 2
             }}
           >
-            <div className="rounded-full bg-black w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+            <div className="rounded-full bg-black w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative select-none">
               <Image
                 src="/images/Abstract.png"
                 alt="hero abstract"
@@ -53,9 +53,9 @@ const HeroSection = () => {
           </motion.div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0}}
+          animate={{ opacity: 1}}
+          transition={{ duration: 1 }}
           className="mx-auto md:mx-0 w-full md:w-1/2 px-5 md:px-0 sm:ml-7"
         >
           <h1 className="flex justify-center sm:justify-start items-center text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
@@ -74,7 +74,7 @@ const HeroSection = () => {
                 key={item.title}
                 className='bg-transparent inline-block'
                 animate={false}
-                customGradient={`${item.gradient}`}
+                customGradient={item.gradient}
               >
                 <span className="text-xs block bg-[#000000] hover:bg-slate-800 rounded-full px-5 py-2 text-white">
                   {item.title}
