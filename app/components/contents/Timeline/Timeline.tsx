@@ -1,5 +1,4 @@
-// Timeline.tsx
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState } from 'react';
 import { BackgroundGradient } from '../../utils/background-gradient';
 import Card from '../Card';
 import useTimelineCarousel from '@/app/hooks/useTimelineCarousel';

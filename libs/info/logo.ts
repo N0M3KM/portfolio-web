@@ -1,5 +1,3 @@
-// logos.js
-
 const languageLogo = [
     {
       name: "python",

@@ -1,6 +1,5 @@
 "use client"
-import React, { useMemo, useState, useEffect } from "react";
-import { BiMenu } from 'react-icons/bi';
+import React, { useMemo } from "react";
 import { twMerge } from "tailwind-merge";
 import { usePathname } from 'next/navigation';
 import NavbarItem from "@/app/components/contents/NavbarItem";

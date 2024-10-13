@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { FC } from "react";
+import React from "react";
 import { twMerge } from "tailwind-merge";
 import { IconItemProps } from "@/app/types";
 

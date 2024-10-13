@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import SkillCard from "../contents/SkillCard/SkillCard";
 import SkillCardInfo from "../contents/SkillCard/SkillCardInfo";
 import Title from "../contents/Title";
 import { FaTools } from "react-icons/fa";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { motion} from "framer-motion";
 
 const cardInfo = [
   {title : "Language", icon : '/images/programming.png'},
