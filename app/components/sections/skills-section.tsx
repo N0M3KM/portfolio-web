@@ -21,7 +21,7 @@ const SkillSection = () => {
       whileInView={{ opacity: 1}}
       transition={{duration : 1}}
       viewport={{ once: true }}
-      className="relative mt-7 py-5 px-10 max-w-screen w-3/4 md:w-5/6 bg-black bg-grid-white/[0.2] border-2 border-[#f65afa] "
+      className="relative mt-7 py-5 px-10 max-w-screen w-5/6 bg-black bg-grid-white/[0.2] border-2 border-[#f65afa] "
     >
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <Title title="Skill" icon={<FaTools color="white" size={35}/>}/>

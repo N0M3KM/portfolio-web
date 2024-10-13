@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
           }}
           className="mx-7 my-5 w-5/6 md:w-full flex pb-10 border-b-2 border-white"
         >
-          <p className="mx-7 md:w-full text-gray-200 text-xl text-center">My name is Yuan. I am a student in the Department of Computer Engineering at KMUTT, Thailand. I am passionate about becoming a full-stack developer, focusing on web page design and optimization. I also enjoy learning about finance and business. Oh...also... Please consider checking out my social media, I have a plan to post more contents about programming and devlog sooner.</p>
+          <p className="mx-7 text-sm md:w-full text-gray-200 sm:text-xl text-center">My name is Yuan. I am a student in the Department of Computer Engineering at KMUTT, Thailand. I am passionate about becoming a full-stack developer, focusing on web page design and optimization. I also enjoy learning about finance and business. Oh...also... Please consider checking out my social media, I have a plan to post more contents about programming and devlog sooner.</p>
       </motion.div>
     </section>
   );

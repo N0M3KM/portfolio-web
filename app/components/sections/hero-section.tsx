@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BackgroundGradient } from "../utils/background-gradient";
 import Image from "next/image";
-import { Meteors } from "../utils/meteors";
 
 const favorites = [
   {
@@ -97,12 +96,12 @@ const HeroSection = () => {
             {nameSpan}
           </h1>
           <p className="text-gray-400 text-base sm:text-lg lg:text-l md:mr-20">
-            I'm Yuan, a junior {devSpan} from Thailand.
+            I'm Yuan, a junior {devSpan} from Thailand. Nice 2 meet you :D
           </p>
           <p className="text-gray-400 text-base sm:text-lg lg:text-l mt-1 md:mr-20">
             I am passionate about
           </p>
-          <div className="py-3 flex flex-wrap gap-2 pr-1 mt-2 w-full">
+          <div className="py-3 flex flex-wrap gap-2 p-4 mt-2 w-full overflow-visible">
             {favorites.map((item) => (
               <BackgroundGradient
                 key={item.title}
@@ -121,7 +120,6 @@ const HeroSection = () => {
           </h1>
         </motion.div>
       </div>
-      <Meteors number={5} />
     </section>
 
   );

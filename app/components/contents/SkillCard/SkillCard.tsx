@@ -9,7 +9,7 @@ const SkillCard = ({ title, icon, isActive, borderColor }: SkillCardProps) => {
             <div className="text-center flex items-center justify-center w-full h-full bg-transparent sm:bg-gradient-to-t from-gray-800 to-gray-900 sm:hover:from-gray-700 sm:hover:to-gray-800 transition duration-200 border-b-2 py-6 border-gray-500 sm:border-0 sm:rounded-xl">
                 <Image
                     src={icon}
-                    alt="skill icon"
+                    alt={title}
                     quality={100}
                     width={40}
                     height={40}
