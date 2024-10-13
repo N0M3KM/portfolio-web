@@ -7,10 +7,10 @@ import { FaTools } from "react-icons/fa";
 import { motion} from "framer-motion";
 
 const cardInfo = [
-  {title : "Language", icon : '/images/programming.png'},
-  {title : "Framework", icon : '/images/framework.png'},
-  {title : "Tool & Library", icon : '/images/tool.png'},
-  {title : "Database", icon : '/images/database.png'}
+  {key : 1, title : "Language", icon : '/images/programming.png'},
+  {key : 2, title : "Framework", icon : '/images/framework.png'},
+  {key : 3, title : "Tool & Library", icon : '/images/tool.png'},
+  {key : 4, title : "Database", icon : '/images/database.png'}
 ]
 
 const SkillSection = () => {
@@ -27,7 +27,7 @@ const SkillSection = () => {
       <Title title="Skill" icon={<FaTools color="white" size={35}/>}/>
       <div className="flex flex-col gap-1 z-1 relative">
         {cardInfo.map((item)=>(
-          <div className="flex flex-col sm:flex-row justify-center w-full z-5">
+          <div key={item.key} className="flex flex-col sm:flex-row justify-center w-full z-5">
             <div className="flex justify-center w-full sm:w-1/4">
               <SkillCard title={item.title} icon={item.icon} borderColor="sm:bg-gradient-to-t from-[#667EEA] to-[#f65afa]"/>
             </div>

@@ -4,7 +4,41 @@ import { motion } from "framer-motion";
 import { BackgroundGradient } from "../utils/background-gradient";
 import Image from "next/image";
 import { Meteors } from "../utils/meteors";
-import { favorites } from "@/libs/info/favorites";
+
+const favorites = [
+  {
+    title : '🎮Gaming',
+    gradient : 'bg-gradient-to-r from-[#662D8C] to-[#ED1E79]'
+  },
+  {
+    title : '💸Business',
+    gradient : 'bg-gradient-to-r from-[#FF5F6D] to-[#FCEE21]'
+  },
+  {
+    title : '🖥️Programming',
+    gradient : 'bg-gradient-to-r from-[#92EFFD] to-[#4E65FF]'
+  },
+  {
+    title : '🎨Graphic Design',
+    gradient : 'bg-gradient-to-r from-[#A890FE] to-[#EA8D8D]'
+  },
+  {
+    title : '🎬Editing',
+    gradient : 'bg-gradient-to-r from-[#11998E] to-[#38EF7D]'
+  },
+  {
+    title : '🔎Puzzle',
+    gradient : 'bg-gradient-to-r from-[#1EAE98] to-[#D8B5FF]'
+  },
+  {
+    title : '🚗Cars',
+    gradient : 'bg-gradient-to-r from-[#667EEA] to-[#764BA2]'
+  },
+  {
+    title : '📖Manga & Financial Book',
+    gradient : 'bg-gradient-to-r from-[#537895] to-[#ffffff]'
+  },
+];
  
 const HeroSection = () => {
   const devSpan = <span className="inline font-bold sm:text-lg lg:text-xl bg-gradient-to-r from-purple-500 to-sky-500 bg-clip-text text-transparent">developer</span>
@@ -59,7 +93,7 @@ const HeroSection = () => {
           className="mx-auto md:mx-0 w-full md:w-1/2 px-5 md:px-0 sm:ml-7"
         >
           <h1 className="flex justify-center sm:justify-start items-center text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <p className="font-semibold text-2xl sm:text-3xl lg:text-5xl sm:pr-1 lg:pr-5 inline">Hello, I'm</p>
+            <p className="font-semibold text-2xl sm:text-3xl lg:text-5xl sm:pr-1 lg:pr-5 inline">Hello, I&apos;m</p>
             {nameSpan}
           </h1>
           <p className="text-gray-400 text-base sm:text-lg lg:text-l md:mr-20">

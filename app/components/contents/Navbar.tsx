@@ -1,12 +1,9 @@
 "use client"
 import React, { useMemo } from "react";
 import { twMerge } from "tailwind-merge";
-import { usePathname } from 'next/navigation';
 import NavbarItem from "@/app/components/contents/NavbarItem";
 
 const Navbar = () => {
-    const pathName = usePathname();
-    
     const routes = useMemo(() => [
         { id: 1, label: 'About', href: '#about' },
         { id: 2, label: 'Skills', href: '#skills' },
