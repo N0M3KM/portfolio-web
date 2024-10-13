@@ -65,3 +65,7 @@ export interface ClipboardLabelProps {
     text: string;
     icon : ReactNode;
 }
+
+export interface LoaderPorps {
+    src : string;
+  }

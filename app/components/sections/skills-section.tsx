@@ -7,10 +7,10 @@ import { FaTools } from "react-icons/fa";
 import { motion} from "framer-motion";
 
 const cardInfo = [
-  {key : 1, title : "Language", icon : '/images/programming.png'},
-  {key : 2, title : "Framework", icon : '/images/framework.png'},
-  {key : 3, title : "Tool & Library", icon : '/images/tool.png'},
-  {key : 4, title : "Database", icon : '/images/database.png'}
+  {key : 1, title : "Language", icon : '/images/Programming.png'},
+  {key : 2, title : "Framework", icon : '/images/Framework.png'},
+  {key : 3, title : "Tool & Library", icon : '/images/Tool.png'},
+  {key : 4, title : "Database", icon : '/images/Database.png'}
 ]
 
 const SkillSection = () => {
