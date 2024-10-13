@@ -43,7 +43,7 @@ const YoutubeCard = () => {
                 </div>
             </div>
             <div className="flex flex-row h-full w-full items-center justify-center text-center text-gray-600 backdrop-blur-sm mt-2">
-                <h1>"I haven't been uploading for long time. Feel free to subscribe if you like random contents."</h1>
+                <h1>&quot;I haven&apos;t been uploading for long time. Feel free to subscribe if you like random contents.&quot;</h1>
             </div>
         </div>
     );

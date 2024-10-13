@@ -1,8 +1,4 @@
 import React from "react";
-import { SkillCardProps } from "@/app/types";
-import Image from "next/image";
-import { twMerge } from "tailwind-merge";
-
 import { FaLine } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { PiMicrosoftOutlookLogoFill } from "react-icons/pi";

@@ -43,7 +43,7 @@ const InstragramCard = () => {
                 </div>
             </div>
             <div className="flex flex-row h-full w-full items-center justify-center text-center text-gray-600 backdrop-blur-sm mt-2">
-                <h1>"Well, click at the blue button. It'll lead you to my IG page."</h1>
+                <h1>&quot;Well, click at the blue button. It&apos;ll lead you to my IG page.&quot;</h1>
             </div>
         </div>
     );

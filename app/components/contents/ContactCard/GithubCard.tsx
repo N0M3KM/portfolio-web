@@ -27,7 +27,7 @@ const GithubCard = () => {
                 </div>
             </div>
             <div className="flex flex-row h-full w-full items-center justify-center text-center text-gray-600 backdrop-blur-sm mt-2">
-                <h1>"My github... nothing much"</h1>
+                <h1>&quot;My github... nothing much&quot;</h1>
             </div>
         </div>
     );
