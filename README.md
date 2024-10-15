@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Check out my website
+
+Here is the link : https://nome-portfolio.vercel.app/
+The website is currently under development. You may encounter some bugs, so please report them to me.
+
 ## Getting Started
 
 First, run the development server:
