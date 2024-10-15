@@ -11,7 +11,7 @@ export const Selection = (title : string) => {
         case "database" : {
             return databaseLogo
         }
-        case "tool & library" : {
+        case "tool" : {
             return toolLogo
         }
     }
