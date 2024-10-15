@@ -12,14 +12,17 @@ const SkillCardInfo = ({ title }: SkillInfoCardProps) => {
             {category && category.length > 0 && category.map((info) => {
                 return (
                     <div className="mx-2 sm:mx-5 transition-transform transform hover:scale-105 w-8 h-8 md:h-9 md:w-9 lg:h-10 lg:w-10">
-                        <Image
-                            key={info.name}
-                            src={info.src}
-                            alt={info.name}
-                            width={40}
-                            height={40}
-                            className={`${info.bg ? "bg-white rounded-full p-2" : ""}`}
-                        />
+                        <div className={`relative w-8 h-8 sm:w-7 sm:h-7 md:w-10 md:h-10 ${info.bg ? "bg-white rounded-full p-2" : ""}`}>
+                            <Image
+                                key={info.name}
+                                src={info.src}
+                                alt={info.name}
+                                width={0}
+                                height={0}
+                                fill
+                                className="p-1"
+                            />
+                        </div>
                     </div>
                 );
             })}
